@@ -1,0 +1,398 @@
+/* Management component styles */
+/* For future use when refactoring CSS into modules */
+
+/* Shared with president.css - only need specific management styles here */
+
+/* Management Summary */
+.management-summary {
+  margin-top: 2rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.summary-card {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.summary-card h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.summary-stat {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: var(--color-white);
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.filter-select {
+  width: 200px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+/* SOP Review */
+.sop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sop-item {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border-left: 4px solid transparent;
+}
+
+.sop-item.pending {
+  border-color: #ff9500;
+}
+
+.sop-item.approved {
+  border-color: #34c759;
+}
+
+.sop-item.rejected {
+  border-color: #ff3b30;
+}
+
+.sop-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.sop-actions {
+  flex: 1;
+  min-width: 250px;
+  border-left: 1px solid var(--color-light-gray);
+  padding-left: 1.5rem;
+}
+
+.sop-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--color-off-white);
+  font-size: 0.875rem;
+}
+
+.sop-file {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--color-gray);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.file-icon {
+  font-size: 1.25rem;
+}
+
+.file-name {
+  flex: 1;
+}
+
+.action-button.small {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.sop-status {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Budget Review */
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.budget-item {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border-left: 4px solid transparent;
+}
+
+.budget-item.pending {
+  border-color: #ff9500;
+}
+
+.budget-item.approved {
+  border-color: #34c759;
+}
+
+.budget-item.rejected {
+  border-color: #ff3b30;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.budget-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--color-off-white);
+  font-size: 0.875rem;
+}
+
+.budget-details {
+  margin-bottom: 1.5rem;
+}
+
+.budget-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  background-color: var(--color-gray);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.budget-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.summary-label {
+  font-weight: 600;
+  color: var(--color-off-white);
+  font-size: 0.875rem;
+}
+
+.summary-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.summary-value.pending {
+  color: #ff9500;
+}
+
+.budget-line-items, .budget-documents {
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.budget-line-items h4, .budget-documents h4 {
+  margin-bottom: 1rem;
+  color: var(--color-off-white);
+}
+
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.budget-table th, .budget-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.budget-table th {
+  color: var(--color-off-white);
+  font-weight: 600;
+}
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--color-medium-gray);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.budget-actions {
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+/* Event Status */
+.event-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-status-card {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border-left: 4px solid transparent;
+}
+
+.event-status-card.pending {
+  border-color: #ff9500;
+}
+
+.event-status-card.approved {
+  border-color: #34c759;
+}
+
+.event-status-card.active {
+  border-color: #0a84ff;
+}
+
+.event-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.event-date {
+  font-size: 0.875rem;
+  color: var(--color-off-white);
+}
+
+.event-organizer {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--color-off-white);
+}
+
+.approval-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.progress-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.progress-item.completed .progress-icon {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+.progress-item.in-progress .progress-icon {
+  background-color: rgba(10, 132, 255, 0.2);
+  color: #0a84ff;
+}
+
+.progress-item.pending .progress-icon {
+  background-color: rgba(142, 142, 147, 0.2);
+  color: #8e8e93;
+}
+
+.event-status-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-gray);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: var(--color-off-white);
+}
+
+.info-value {
+  font-weight: 600;
+}
+
+.event-status-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.event-status-badge {
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.event-status-badge.pending {
+  background-color: rgba(255, 149, 0, 0.2);
+  color: #ff9500;
+}
+
+.event-status-badge.approved {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+.event-status-badge.active {
+  background-color: rgba(10, 132, 255, 0.2);
+  color: #0a84ff;
+} 

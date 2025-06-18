@@ -1,0 +1,348 @@
+/* President component styles */
+/* For future use when refactoring CSS into modules */
+
+/* Styles for president dashboard, event management, etc. would go here */
+
+/* Section Container */
+.section-container {
+  background-color: var(--color-dark-gray);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  margin-top: 1.5rem;
+}
+
+/* Role Assignment Container */
+.role-assignment-container {
+  margin: 1.5rem 0;
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.role-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius);
+}
+
+.role-name {
+  font-weight: 600;
+}
+
+.role-select {
+  width: 60%;
+}
+
+/* Budget Items Container */
+.budget-items-container {
+  margin: 1.5rem 0;
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Approval Status Container */
+.approval-status-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.approval-card {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.approval-info {
+  margin: 1rem 0;
+}
+
+.approval-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.approval-label {
+  font-weight: 600;
+}
+
+.approval-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.approval-status.approved {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+.approval-status.pending {
+  background-color: rgba(255, 149, 0, 0.2);
+  color: #ff9500;
+}
+
+.approval-status.rejected {
+  background-color: rgba(255, 59, 48, 0.2);
+  color: #ff3b30;
+}
+
+.approval-notes {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-light-gray);
+}
+
+/* Publishable Events Container */
+.publishable-events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.publishable-event {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.event-status, .event-ready-status {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.status-label {
+  font-weight: 600;
+}
+
+.status-value {
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-value.completed {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+.status-value.pending {
+  background-color: rgba(255, 149, 0, 0.2);
+  color: #ff9500;
+}
+
+.status-value.approved {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+/* Attendance Monitoring */
+.attendance-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  background-color: var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.stat-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.stat-description {
+  font-size: 0.875rem;
+  color: var(--color-off-white);
+}
+
+.attendance-list {
+  margin-top: 2rem;
+}
+
+.list-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.filter-select {
+  width: 200px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.attendance-table th, .attendance-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.attendance-table th {
+  background-color: var(--color-light-gray);
+  font-weight: 600;
+}
+
+.attendance-table tr:nth-child(even) {
+  background-color: var(--color-gray);
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.idea {
+  background-color: rgba(255, 149, 0, 0.2);
+  color: #ff9500;
+}
+
+.status-badge.pending {
+  background-color: rgba(255, 149, 0, 0.2);
+  color: #ff9500;
+}
+
+.status-badge.approved {
+  background-color: rgba(52, 199, 89, 0.2);
+  color: #34c759;
+}
+
+.status-badge.live {
+  background-color: rgba(0, 122, 255, 0.2);
+  color: #007aff;
+}
+
+.status-badge.completed {
+  background-color: rgba(142, 142, 147, 0.2);
+  color: #8e8e93;
+}
+
+.status-badge.cancelled {
+  background-color: rgba(255, 59, 48, 0.2);
+  color: #ff3b30;
+}
+
+/* President Event Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Form Improvements for President */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-off-white);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-medium-gray);
+  border-radius: var(--border-radius);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-off-white);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ff3b30;
+}
+
+.error-message {
+  color: #ff3b30;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+} 

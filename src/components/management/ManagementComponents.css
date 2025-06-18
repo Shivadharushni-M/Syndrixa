@@ -1,0 +1,119 @@
+/* Event Approval Actions */
+.event-approval-actions {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
+
+.event-approval-actions .submit-button {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.event-approval-actions .submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+}
+
+.event-approval-actions .cancel-button {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.event-approval-actions .cancel-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(220, 53, 69, 0.3);
+}
+
+/* Status Badges */
+.event-status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-status-badge.pending {
+  background: linear-gradient(135deg, #ffc107 0%, #ffb300 100%);
+  color: #000;
+}
+
+.event-status-badge.approved {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.event-status-badge.active {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+}
+
+.event-status-badge.completed {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+}
+
+.event-status-badge.rejected {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+/* Loading and Empty States */
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
+
+.no-events-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
+
+/* Event Details */
+.event-details {
+  margin: 12px 0;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.event-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.event-details strong {
+  color: #1a1a1a;
+} 
